@@ -454,15 +454,15 @@ header .img {
 }
 
 .card__image-1 {
-  background-image: url(../../../src/assets/icon.png);
+  background-image: url(../assets/icon.png);
 }
 
 .card__image-2 {
-  background-image: url(../../../src/assets/icon2.png);
+  background-image: url(../assets/icon2.png);
 }
 
 .card__image-3 {
-  background-image: url(../../../src/assets/icon3.png);
+  background-image: url(../assets/icon3.png);
 }
 
 .card__image-1, .card__image-2, .card__image-3 {
