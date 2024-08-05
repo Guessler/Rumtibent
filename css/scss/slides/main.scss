@@ -1,0 +1,17 @@
+@import "../components.scss";
+.home {
+    margin: 82px 0;
+}
+.home__substrate {
+    padding: 40px;
+    background-color: #ffffff2d;
+    border-radius: 10px;
+}
+.home__choose-button {
+    width: 256px;
+    padding: 16px 14px;
+    border-radius: 8px;
+    border: 1px solid $white;
+    color: $white;
+    background: none;
+}

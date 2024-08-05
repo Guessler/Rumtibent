@@ -1,0 +1,10 @@
+@mixin tablet () {
+    @media (max-width: $brakepoint-xxl) {
+        @content;
+    }
+}
+@mixin phone () {
+    @media (max-width: $brakepoint-sm) {
+        @content;
+    }
+}

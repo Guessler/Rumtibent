@@ -1,0 +1,23 @@
+@mixin button-styles($background-color, $text-color) {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: $btn-width;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background: $background-color;
+    color: $text-color;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+        background-color: $text-color;
+        color: $background-color;
+        transform: scale(1.03);  // Используем transform вместо scale
+    }
+
+    &:active {
+        background-color: $gray;
+        transform: scale(1);  // Используем transform вместо scale
+    }
+}

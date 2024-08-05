@@ -1,0 +1,47 @@
+.w-full {
+    width: 100%;
+  }
+  .h-full {
+    height: 100vh;
+  }
+  .margin-0 {
+    margin: 0;
+  }
+  .padding-0 {
+    padding: 0;
+  }
+  .biggets-margin {
+    margin-bottom: 200px;
+  }
+  .gap-32 {
+    gap: 32px;
+  }
+  .gap-20 {
+    gap: 20px;
+  }
+  .radius-6 {
+    border-radius: 6px;
+  }
+  .yellow-text {
+    color: $accent-col;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .auto {
+    margin: auto;
+  }
+  .white {
+    color: $white;
+  }
+  .media-none {
+    @include tablet {
+      display: none;
+    }
+  }
+  .media-obj-reverce {
+    @include tablet {
+      display: none;
+    }
+  }
+  

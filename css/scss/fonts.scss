@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('../fonts/NEXT ART_Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('../fonts/NEXT ART_Heavy.otf') format('opentype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('../fonts/NEXT ART_Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('../fonts/NEXT ART_Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('../fonts/NEXT ART_SemiBold.otf') format('opentype');
+    font-weight: 600;
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+h1 {
+    font-family: 'NEXT ART', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #FDFDFD;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+    @media screen and (max-width: 1300px) {
+        font-size: 24px;
+    }
+}
+
+button {
+    font-family: 'NEXT ART', sans-serif;
+    font-weight: 600; /* Adjust as needed */
+}
+
+p, span, ul, li, b {
+    font-family: 'Nunito Sans', 'Mulish', sans-serif;
+}
+
+span, p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+ul {
+    font-weight: 600;
+}
+
+li {
+    font-weight: 500;
+}

@@ -1,0 +1,38 @@
+.flex{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.items-end{
+    align-items: end;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.relative{
+    position: relative;
+}
+
+.gap-40{
+    gap: 40px;
+    @media screen and (max-width: 1000px) {
+        gap: 24px;
+    }
+}
+.absolute{
+
+    position: absolute;
+}
