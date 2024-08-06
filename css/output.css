@@ -194,7 +194,7 @@ li {
   }
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
@@ -212,14 +212,6 @@ header ul li {
   header ul li {
     display: none;
   }
-}
-header .nav-link {
-  color: #FDFDFD;
-  transition: 0.3s all;
-}
-header .nav-link:hover {
-  color: #F2BE22;
-  text-decoration: underline;
 }
 @media (max-width: 1300px) {
   header .main-button {
@@ -256,10 +248,15 @@ header .nav-link:hover {
 .nav-link {
   color: #FDFDFD;
   transition: 0.3s all;
+  text-decoration: none;
 }
 .nav-link:hover {
   color: #F2BE22;
   text-decoration: underline;
+  transform: scale(1.02);
+}
+.nav-link:hover svg path {
+  fill: #F2BE22;
 }
 
 section {
@@ -567,7 +564,7 @@ footer {
 }
 
 .footer__cimpany-inf {
-  width: 480px;
+  width: 450px;
 }
 @media (max-width: 1300px) {
   .footer__cimpany-inf {
@@ -576,14 +573,19 @@ footer {
 }
 
 .footer__services {
-  width: 280px;
+  width: 350px;
 }
 .footer__services li {
   list-style: none;
 }
 
 .footer__important {
-  width: 280px;
+  width: 380px !important;
+}
+@media (max-width: 1300px) {
+  .footer__important {
+    width: 280px !important;
+  }
 }
 .footer__important li {
   list-style: none;
@@ -602,12 +604,19 @@ footer {
   }
 }
 
+.read-news {
+  color: #18121E;
+}
+.read-news:hover {
+  color: #18121E;
+}
+
 .footer__above {
   background: #FDFDFD;
   bottom: -300px;
   color: #18121E;
   border-radius: 6px;
-  padding: 40px 100px;
+  padding: 40px 40px;
 }
 @media (max-width: 1300px) {
   .footer__above {
@@ -659,4 +668,53 @@ footer {
 .footer__content > * {
   width: 300px;
   padding-left: 20px;
+}
+
+.stipulation {
+  color: #18121E;
+  text-decoration: underline;
+}
+
+.skype {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.skype:hover {
+  transform: scale(1.2);
+}
+.skype:hover path {
+  fill: #71BBF1;
+}
+
+.vk {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.vk:hover {
+  transform: scale(1.2);
+}
+.vk:hover path {
+  fill: #385AD4;
+}
+
+.pinterest {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.pinterest:hover {
+  transform: scale(1.2);
+}
+.pinterest:hover path {
+  fill: #EC3131;
+}
+
+.telegram {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.telegram:hover {
+  transform: scale(1.2);
+}
+.telegram:hover path {
+  fill: #71D2F1;
 }

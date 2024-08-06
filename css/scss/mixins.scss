@@ -21,3 +21,18 @@
         transform: scale(1);  // Используем transform вместо scale
     }
 }
+
+@mixin iconHover($color) {
+    &:hover path {
+      fill: $color;
+    }
+  }
+  
+  @mixin iconBase {
+    transition: 0.3s all;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }

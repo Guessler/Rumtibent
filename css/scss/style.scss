@@ -7,7 +7,8 @@
 @import "./components.scss";
 @import "./UtilityClasses.scss";
 
-body {
+
+html {
   scroll-behavior: smooth;
 }
 header {
@@ -26,15 +27,7 @@ header {
       }
     }
   }
-  .nav-link {
-    color: $white;
-    transition: 0.3s all;
 
-    &:hover {
-      color: $accent-col;
-      text-decoration: underline;
-    }
-  }
   .main-button {
     @include tablet {
       display: none;
@@ -55,12 +48,17 @@ header {
 .nav-link {
   color: $white;
   transition: 0.3s all;
-
+  text-decoration: none;
   &:hover {
     color: $accent-col;
     text-decoration: underline;
+    transform: scale(1.02);
+    svg path {
+      fill: $accent-col;
+    }
   }
 }
+
 section {
   margin: 0 0 80px 0;
 }
@@ -326,21 +324,23 @@ footer {
   }
 }
 .footer__cimpany-inf {
-  width: 480px;
-
+  width: 450px;
   @include tablet {
     width: 100%;
   }
 }
 .footer__services {
-  width: 280px;
+  width: 350px;
 
   li {
     list-style: none;
   }
 }
 .footer__important {
-  width: 280px;
+  width: 380px !important;
+  @include tablet {
+    width: 280px !important;
+  }
 
   li {
     list-style: none;
@@ -359,12 +359,18 @@ footer {
     }
   }
 }
+.read-news{
+  color: $text-black;
+  &:hover{
+    color: $text-black;
+  }
+}
 .footer__above {
   background: $white;
   bottom: -300px;
   color: $text-black;
   border-radius: 6px;
-  padding: 40px 100px;
+  padding: 40px 40px;
 
   @include tablet {
     width: 100%;
@@ -407,4 +413,29 @@ footer {
 .footer__content > * {
   width: 300px;
   padding-left: 20px;
+}
+
+.stipulation{
+  color: $text-black;
+  text-decoration: underline
+}
+
+.skype {
+  @include iconBase;
+  @include iconHover(#71BBF1);
+}
+
+.vk {
+  @include iconBase;
+  @include iconHover(#385AD4);
+}
+
+.pinterest {
+  @include iconBase;
+  @include iconHover(#EC3131);
+}
+
+.telegram {
+  @include iconBase;
+  @include iconHover(#71D2F1);
 }
