@@ -309,7 +309,6 @@ body {
 
 .container {
   width: 1180px;
-  padding-left: 20px;
 }
 @media (max-width: 1300px) {
   .container {
@@ -321,7 +320,7 @@ body {
 }
 @media (max-width: 420px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
   .container h1 {
     font-size: 28px;
@@ -618,6 +617,9 @@ footer {
   color: #18121E;
   border-radius: 6px;
   padding: 40px 40px;
+}
+.footer__above input::placeholder {
+  padding-left: 10px;
 }
 @media (max-width: 1300px) {
   .footer__above {
