@@ -1,24 +1,24 @@
 const imageBlock = document.getElementById("imageBlock");
 
         let imagesFirst = [
-            "../src/assets/Rectangle 26.png",
-            "../src/assets/Rectangle 21.png",
-            "../src/assets/Rectangle 22.png",
+            "./assets/Rectangle 26.png",
+            "./assets/Rectangle 21.png",
+            "./assets/Rectangle 22.png",
         ];
         let imagesSecond = [
-            "../src/assets/Rectangle 24.png",
-            "../src/assets/Rectangle 23.png",
-            "../src/assets/Rectangle 25.png",
+            "./assets/Rectangle 24.png",
+            "./assets/Rectangle 23.png",
+            "./assets/Rectangle 25.png",
         ];
         let largeImagesFirst = [
-            "../src/assets/Rectangle 32.png",
-            "../src/assets/Rectangle 27.png",
-            "../src/assets/Rectangle 28.png",
+            "./assets/Rectangle 32.png",
+            "./assets/Rectangle 27.png",
+            "./assets/Rectangle 28.png",
         ];
         let largeImagesSecond = [
-            "../src/assets/Rectangle 29.png",
-            "../src/assets/Rectangle 30.png",
-            "../src/assets/Rectangle 31.png",
+            "./assets/Rectangle 29.png",
+            "./assets/Rectangle 30.png",
+            "./assets/Rectangle 31.png",
         ];
 
         let largeImagesFirstSet = new Set();
