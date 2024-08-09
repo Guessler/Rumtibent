@@ -390,6 +390,9 @@ footer {
   color: $text-black;
   border-radius: 6px;
   padding: 40px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+
 
   input::placeholder{
     padding-left: 10px;
@@ -571,4 +574,24 @@ footer {
 .burger-popup__menu li{
   display: flex;
   gap: 10px;
+}
+
+input[type="week"] {
+  padding-left: 16px; 
+  padding-right: 16px; 
+}
+
+input[type="week"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+}
+.form__input{
+  font-size: 16px;
+
+  color: $white;
+}
+
+.margin-tb-80{
+  margin: 80px 0 80px 0;
 }

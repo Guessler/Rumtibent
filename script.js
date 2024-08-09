@@ -114,7 +114,7 @@ const imageBlock = document.getElementById("imageBlock");
         const burgerPopup = document.getElementById("burger-popup")
         const cross = document.getElementById("cross")
         const menuItems = document.querySelectorAll("#burger-popup li");
-        
+
         burgerPopup.classList.add("none")
 
         burger.addEventListener('click',()=>{
