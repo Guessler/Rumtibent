@@ -64,3 +64,67 @@ const imageBlock = document.getElementById("imageBlock");
 
         createImages(imagesFirst, largeImagesFirst, [0], largeImagesFirstSet);
         createImages(imagesSecond, largeImagesSecond, [1], largeImagesSecondSet);
+
+
+
+
+
+
+
+        const dropDown = document.getElementById("drop-down");
+        const contributors = document.getElementById("contributors");
+        const contributorsNumber = document.getElementById("contributors-number");
+        
+        contributors.addEventListener('click', () => {
+            dropDown.classList.toggle("none");
+        });
+        
+        dropDown.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                contributorsNumber.innerText = event.target.dataset.value;
+                dropDown.classList.add("none");
+            }
+        });
+        
+        dropDown.classList.add("none");
+        
+        
+
+        const placeDropDawn = document.getElementById("place-drop-down")
+        const place = document.getElementById("place")
+        const placePlace = document.getElementById("place-place")
+
+        place.addEventListener('click',()=>{
+            placeDropDawn.classList.toggle("none")
+        })
+
+        placeDropDawn.addEventListener('click',(event)=>{
+            if(event.target.tagName = "LI"){
+                placePlace.innerText = event.target.dataset.value;
+                placeDropDawn.classList.add("none")
+            }
+        })
+        placeDropDawn.classList.add("none")
+
+
+        
+
+
+        const burger = document.getElementById("burger")
+        const burgerPopup = document.getElementById("burger-popup")
+        const cross = document.getElementById("cross")
+        const menuItems = document.querySelectorAll("#burger-popup li");
+        
+        burgerPopup.classList.add("none")
+
+        burger.addEventListener('click',()=>{
+            burgerPopup.classList.remove("none")
+        })
+        cross.addEventListener('click',()=>{
+            burgerPopup.classList.add("none")
+        })
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                burgerPopup.classList.add("none");
+            });
+        });

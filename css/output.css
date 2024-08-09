@@ -94,6 +94,14 @@ li {
   align-items: end;
 }
 
+.items-start {
+  align-items: start;
+}
+
+.none {
+  display: none;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -196,6 +204,10 @@ li {
 
 html {
   scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
 }
 
 header .container {
@@ -530,6 +542,16 @@ header .img {
   padding: 0 10px 0 10px;
 }
 
+.large {
+  width: 580px;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1300px) {
   .pinterest-block {
     width: 100%;
@@ -539,6 +561,9 @@ header .img {
   }
 }
 
+.pinterest-block__pictures img {
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
 @media (max-width: 1300px) {
   .pinterest-block__pictures {
     flex-wrap: nowrap;
@@ -738,4 +763,86 @@ footer {
 }
 .play:active {
   transform: scale(1.05);
+}
+
+.drop-down {
+  width: 100%;
+  height: auto;
+  top: 70%;
+  left: 0;
+  padding: 0;
+  color: #18121E;
+  background-color: #FDFDFD;
+  list-style: none;
+}
+.drop-down li {
+  width: calc(100% - 10px);
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s all;
+}
+.drop-down li:hover {
+  background-color: rgb(20, 138, 146);
+  color: #FDFDFD;
+}
+
+.bottom-border {
+  border-radius: 0 0 10px 10px;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.image-container img {
+  transition: all 0.3s ease-in-out;
+  width: 280px;
+  height: 280px;
+}
+
+.image-container img.large {
+  width: 580px;
+  height: auto;
+}
+
+.image-container button {
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.image-container button img.large {
+  width: 100%;
+  height: auto;
+}
+
+.burger-popup {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #1A3E3E;
+}
+
+.cross {
+  top: 40px;
+  right: 30px;
+  position: fixed;
+}
+
+.burger-popup__menu {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+.burger-popup__menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.burger-popup__menu li {
+  display: flex;
+  gap: 10px;
 }
